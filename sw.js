@@ -1,5 +1,6 @@
-const CACHE = 'semper-fortis-v1';
-const ASSETS = ['/', '/index.html'];
+const CACHE = 'semper-fortis-v2';
+const BASE = '/Fitness-Tracker-App';
+const ASSETS = [BASE + '/', BASE + '/index.html', BASE + '/manifest.json', BASE + '/icon-192.png', BASE + '/icon-512.png'];
 
 self.addEventListener('install', function(e) {
   e.waitUntil(
@@ -26,7 +27,7 @@ self.addEventListener('fetch', function(e) {
         return response;
       });
     }).catch(function() {
-      return caches.match('/index.html');
+      return caches.match(BASE + '/index.html');
     })
   );
 });
