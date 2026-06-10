@@ -2,7 +2,7 @@
   "name": "Semper Fortis",
   "short_name": "Semper Fortis",
   "description": "USMC 12-Week Training Protocol",
-  "start_url": "/Fitness-Tracker-App/",
+  "start_url": "https://arunkamalpatra.github.io/Fitness-Tracker-App",
   "scope": "/Fitness-Tracker-App/",
   "display": "standalone",
   "background_color": "#0A0A0A",
